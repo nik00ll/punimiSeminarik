@@ -1,7 +1,7 @@
 import java.awt.*;
 public class TestPieChart
 { public static void main(String[] args)
-{ PieChartWriter p = new PieChartWriter(15);
+{ PieChartWriter p = new PieChartWriter(24);// 24 the total of the hours that are being represented
 p.setTitle("How I spend my day");
 p.setSlice1("Sleep: 7 hours", 7, Color.black);
 p.setSlice4("Recreation: 9 hours", 9, Color.gray);
