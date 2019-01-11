@@ -1,7 +1,7 @@
 import java.awt.*;
 public class TestPieChart1
 { public static void main(String[] args)
-{ PieChartWriter p = new PieChartWriter(100);the total of the percentages tha are being displayed
+{ PieChartWriter p = new PieChartWriter(100);the total of the percentages that are being displayed
 p.setTitle("INCOME:");
 p.setSlice1("personal income taxes: 46%", 46, Color.black);
 p.setSlice5("social security and medicare taxes: 34%", 34, Color.gray);
