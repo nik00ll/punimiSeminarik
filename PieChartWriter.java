@@ -30,10 +30,10 @@ public class PieChartWriter extends JPanel
    int vlera4=0;
    int vlera5=0;
    int vlera6=0;
-   double a=0;
+   double a=0;//the minimal value or the space it takes to draw an arc of the value 1
    
-   public PieChartWriter(double minimalValue)
-   {a=minimalValue;}
+   public PieChartWriter(double totalvalue)
+   {a=360/totalvalue;}
    
 
 
