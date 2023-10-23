@@ -30,7 +30,11 @@ public class PieChartWriter extends JPanel
    int vlera4=0;
    int vlera5=0;
    int vlera6=0;
-   double a=0;//the minimal value or the space it takes to draw an arc of the value 1
+   double a;//the minimal value or the space it takes to draw an arc of the value 1
+   int width=300;
+   int height=300;
+   int x=80;
+   int y=80;
    
    public PieChartWriter(double totalvalue)
    {a=360/totalvalue;}
@@ -88,27 +92,27 @@ public class PieChartWriter extends JPanel
    public void paintComponent(Graphics g )
    {
       g.setColor(color1);
-      g.fillArc(80,80,300,300,0,vlera1);
+      g.fillArc(x,y,width,height,0,vlera1);
       g.drawString( sentence1,440,200);
       
       g.setColor(color2);
-      g.fillArc(80,80,300,300,amount1,vlera2);
+      g.fillArc(x,y,width,height,amount1,vlera2);
       g.drawString( sentence2,440,220);
       
       g.setColor(color3);
-      g.fillArc(80,80,300,300,amount2,vlera3);
+      g.fillArc(x,y,width,height,amount2,vlera3);
       g.drawString( sentence3,440,240);
       
       g.setColor(color4);
-      g.fillArc(80,80,300,300,amount3,vlera4);
+      g.fillArc(x,y,width,height,amount3,vlera4);
       g.drawString( sentence4,440,260);
      
       g.setColor(color5);
-      g.fillArc(80,80,300,300,amount4,vlera5);
+      g.fillArc(x,y,width,height,amount4,vlera5);
       g.drawString( sentence5,440,280);
      
       g.setColor(color6);
-      g.fillArc(80,80,300,300,amount5,vlera6);
+      g.fillArc(x,y,width,height,amount5,vlera6);
       g.drawString( sentence6,440,300);
    
    }
